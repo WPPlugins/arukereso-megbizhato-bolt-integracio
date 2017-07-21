@@ -1,0 +1,47 @@
+/**
+ * kis css moddolás
+ */
+@import url('https://fonts.googleapis.com/css?family=Jura:400,600&subset=latin-ext');
+
+input#wc-arukereso-megbizthato-bolt-webapi {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+span.webapispan {
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+.settings_page_wc-arukereso-megbizthato-bolt .wrap {
+    float: left;
+    width: 50%;
+    margin: 25px 0;
+    background: rgba(35, 40, 45, 0.21);
+    padding: 30px 20px;
+    position: fixed;
+}
+.settings_page_wc-arukereso-megbizthato-bolt #wpwrap {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay;
+}
+.settings_page_wc-arukereso-megbizthato-bolt .plugincim {
+    font-family: 'Jura', sans-serif;
+    color: #32373c;
+    font-weight: 600!important;
+}
+div#apikuldo #submit {
+    margin: 0;
+    padding: 8px 30px;
+    font-size: 16px;
+    height: auto;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+}
+.wrap .updated.fade {
+    display: none;
+}
