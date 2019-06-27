@@ -16,7 +16,7 @@
  * Plugin Name:       Woocommerce Árukereső - Megbízható bolt integráció
  * Plugin URI:        http://plus-kreativ.hu
  * Description:       Árukereső - Megbízható bolt program integrálása Woocommerce rendszerhez
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Dávid Richárd
  * Author URI:        http://plus-kreativ.hu
  * License:           GPL-2.0+
