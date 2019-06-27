@@ -40,6 +40,9 @@ Igen.
 
 == Changelog ==
 
+= 1.1 =
+* WooCommerce 3+ kompatibilitás javítása
+
 = 1.0 =
 * Elkészült a bővítmény.
 
@@ -47,6 +50,9 @@ Igen.
 * Elkészült a funkció.
 
 == Upgrade Notice ==
+
+= 1.1 =
+* WooCommerce 3+ kompatibilitás javítása
 
 = 1.0 =
 * Elkészült a bővítmény.

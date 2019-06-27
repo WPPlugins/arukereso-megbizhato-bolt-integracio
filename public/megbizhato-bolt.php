@@ -147,15 +147,21 @@ function arukereso_trusted_shop( $order_id ) {
 	$option_name = 'arukereso_webapi_kulcs';
 	$webapikulcs = $wpdb->get_var($wpdb->prepare("SELECT option_value FROM $wpdb->options WHERE option_name = %s", $option_name));
 	$order = wc_get_order( $order_id );
+	$order_data = $order->get_data();
 	
+	/*
+	* Fixing WC 3+ compatibility issues ("Order properties should not be accessed directly.")
+	*
+	* @since    1.1.0
+	*/
 	try {
 		$Client = new TrustedShop($webapikulcs);
-		$kliensmail = $order->billing_email;
+		$kliensmail = $order_data['billing']['email'];
 		$Client->SetEmail($kliensmail);
-		$line_items = $order->get_items();
-		foreach ( $line_items as $item ) {
-			$product = $order->get_product_from_item( $item );
-			$product_name = $item['name'];
+		foreach ($order->get_items() as $line_items => $item ) {
+			$product = $item->get_product();
+			$item_data    = $item->get_data();
+			$product_name = $item_data['name'];
 			$Client->AddProduct($product_name);
 		}
 	echo $Client->Prepare();
